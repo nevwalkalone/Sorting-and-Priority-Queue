@@ -1,6 +1,5 @@
 import java.io.IOException;
 
-//check pdf-report for more details
 public class AlgorithmComp {
 	public static void main(String[] args) throws IOException {
 

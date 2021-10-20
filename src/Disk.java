@@ -1,4 +1,9 @@
-// check interface  for more details
+/**
+ * Class that implements the Disk Interface's methods. Comparable is implemented
+ * in order to be able to compare the capacities of 2 different disks Comments
+ * for methods that are overriden can be found in the Disk Interface.
+ */
+
 public class Disk implements DiskInterface, Comparable<Disk> {
 
 	// id of the specific disk
@@ -8,13 +13,16 @@ public class Disk implements DiskInterface, Comparable<Disk> {
 	private List<Integer> folders = new List<>();
 
 	// size of the specific disk
-	private int Disk_size;
+	private int disk_Size;
 
+	// Constructor
 	public Disk(int id) {
 		this.id = id;
 
-		Disk_size = 1000000;
+		disk_Size = 1000000;
 	}
+
+	// GETTERS
 
 	@Override
 	public List<Integer> get_Files() {
@@ -23,7 +31,7 @@ public class Disk implements DiskInterface, Comparable<Disk> {
 
 	@Override
 	public int getFreeSpace() {
-		return Disk_size;
+		return disk_Size;
 
 	}
 
@@ -41,12 +49,19 @@ public class Disk implements DiskInterface, Comparable<Disk> {
 	/**
 	 * Reduces the size of the Disk if a file is inserted
 	 * 
-	 * @param file_size
+	 * @param file_size size of the file that will be inserted, by which the Disk
+	 *                  size will be reduced.
 	 */
 
 	private void reduce_size(int file_size) {
-		Disk_size = Disk_size - file_size;
+		disk_Size = disk_Size - file_size;
 	}
+
+	/**
+	 * Compares the sizes of 2 different disks.
+	 * 
+	 * @param B other Disk that will be compared
+	 */
 
 	@Override
 	public int compareTo(Disk B) {
@@ -57,7 +72,9 @@ public class Disk implements DiskInterface, Comparable<Disk> {
 
 		else if (this.getFreeSpace() > B.getFreeSpace()) {
 			return 1;
-		} else {
+		}
+
+		else {
 			return -1;
 		}
 	}
