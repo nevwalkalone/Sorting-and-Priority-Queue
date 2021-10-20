@@ -46,14 +46,8 @@ public class Disk implements DiskInterface, Comparable<Disk> {
 		reduce_size(file);
 	}
 
-	/**
-	 * Reduces the size of the Disk if a file is inserted
-	 * 
-	 * @param file_size size of the file that will be inserted, by which the Disk
-	 *                  size will be reduced.
-	 */
-
-	private void reduce_size(int file_size) {
+	@Override
+	public void reduce_size(int file_size) {
 		disk_Size = disk_Size - file_size;
 	}
 

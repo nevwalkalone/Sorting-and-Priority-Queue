@@ -27,4 +27,12 @@ public interface DiskInterface {
 
 	void addFileToTheList(int file);
 
+	/**
+	 * Reduces the size of the Disk if a file is inserted
+	 * 
+	 * @param file_size size of the file that will be inserted, by which the Disk
+	 *                  size will be reduced.
+	 */
+	void reduce_size(int file_size);
+
 }

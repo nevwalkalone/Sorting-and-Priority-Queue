@@ -37,4 +37,12 @@ public interface MaxPQInterface<T> {
       */
      void refresh();
 
+     /**
+      * Swaps elements in indexes i and j.
+      * 
+      * @param i index of the first table, whose element will be swapped.
+      * @param j index of the second table, whose element will be swapped.
+      */
+     void swap(int i, int j);
+
 }

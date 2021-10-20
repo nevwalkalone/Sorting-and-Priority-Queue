@@ -1,6 +1,6 @@
 /**
  * Class that implements the List Interface's methods. Comments for each method
- * can be found in the List Interface.
+ * can be found in the List Interface. Generics were used.
  */
 
 public class List<T> implements ListInterface<T> {

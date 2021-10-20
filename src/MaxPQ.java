@@ -1,4 +1,8 @@
-//check interface and pdf-report for more details
+/**
+ * Class that implements the List Interface's methods. Comments for each method
+ * can be found in the List Interface. Generics were used.
+ */
+
 public class MaxPQ<T> implements MaxPQInterface<T> {
 
 	private T[] PQ;
@@ -111,8 +115,8 @@ public class MaxPQ<T> implements MaxPQInterface<T> {
 		sink(1);
 	}
 
-	// swaps elements in indexes i and j
-	private void swap(int i, int j) {
+	@Override
+	public void swap(int i, int j) {
 		T temp = PQ[i];
 		PQ[i] = PQ[j];
 		PQ[j] = temp;
