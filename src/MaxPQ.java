@@ -1,6 +1,6 @@
 /**
- * Class that implements the List Interface's methods. Comments for each method
- * can be found in the List Interface. Generics were used.
+ * Class that implements the MaxPQ Interface's methods. Comments for methods
+ * that are overriden can be found in the MaxPQ Interface.
  */
 
 public class MaxPQ<T> implements MaxPQInterface<T> {
@@ -9,7 +9,7 @@ public class MaxPQ<T> implements MaxPQInterface<T> {
 	private int size;
 
 	@SuppressWarnings("unchecked")
-	// constructs the Priority Queue
+	// constructs the Priority Queue with Generics
 	public MaxPQ(int maxN) {
 		PQ = (T[]) new Object[maxN];
 		size = 0;
@@ -63,6 +63,11 @@ public class MaxPQ<T> implements MaxPQInterface<T> {
 	}
 
 	@SuppressWarnings("unchecked")
+	/**
+	 * An element swims bottom-up, until its position in the heap is correct.
+	 * 
+	 * @param i index for element that needs to swim.
+	 */
 	private void swim(int i) {
 
 		// find parent
@@ -79,13 +84,18 @@ public class MaxPQ<T> implements MaxPQInterface<T> {
 	}
 
 	@SuppressWarnings("unchecked")
+	/**
+	 * Sinks an element top-down, until its position in the heap is correct.
+	 * 
+	 * @param i index for element that needs to be sinked.
+	 */
 	private void sink(int i) {
 
 		// determine left, right child
 		int left = 2 * i;
 		int right = left + 1;
 
-		// while we haven't reached the leafs
+		// while we haven't reached the leaves
 		// if 2*i > size, node i is a leaf return
 		while (left <= size) {
 

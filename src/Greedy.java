@@ -1,8 +1,10 @@
 import java.io.*;
 import java.util.Scanner;
 
-//check pdf-report for more details
-//to run the program in cmd java Greedy path_to_file/filename.txt
+/**
+ * Greedy Algorithm implementation
+ */
+
 public class Greedy {
 
 	public static void main(String[] args) throws IOException {
@@ -18,7 +20,12 @@ public class Greedy {
 
 	}
 
-	// method for Greedy Algorithm
+	/**
+	 * Greedy Algorithm Implementation.
+	 * 
+	 * @param table in which the algorithm will be implemented.
+	 * @return total number of disks used in a specific text file.
+	 */
 	public static int GreedyAlgorithm(int[] table) {
 
 		// creating a prioriy queue which contains Disk objects
@@ -67,14 +74,22 @@ public class Greedy {
 		}
 
 		// calls the print method
-		Print(PQ, folders_size, table.length, NumberOfDisks);
+		print(PQ, folders_size, table.length, NumberOfDisks);
 
 		// returns total number of disks used in the specific text file
 		return NumberOfDisks;
 	}
 
-	// Print method
-	private static void Print(MaxPQ<Disk> PQ, int folders_size, int NumberOfFolders, int NumberOfDisks) {
+	/**
+	 * Prints total number of disks used . Also prints disks in descending order
+	 * (free disk space as a criteria).
+	 * 
+	 * @param PQ
+	 * @param folders_size
+	 * @param NumberOfFolders
+	 * @param NumberOfDisks
+	 */
+	private static void print(MaxPQ<Disk> PQ, int folders_size, int NumberOfFolders, int NumberOfDisks) {
 
 		System.out.println("\nSum of all folders = " + (double) folders_size / 1000000 + " TB");
 		System.out.println("Total number of disks used = " + NumberOfDisks);
@@ -89,10 +104,16 @@ public class Greedy {
 		}
 	}
 
-	// TextFileCheck Method
+	/**
+	 * Checks if text file in in correct form.
+	 * 
+	 * @param file_path exact txt path.
+	 * @return the table which contains all files, null if the txt file is in
+	 *         incorrect form.
+	 * @throws IOException
+	 */
 	public static int[] TextFileCheck(String file_path) throws IOException {
 
-		// try block
 		try {
 
 			// creating objects for reading the file
@@ -106,16 +127,13 @@ public class Greedy {
 
 			while ((s = br.readLine()) != null) {
 
-				// if file size isn't between 0 and 1000000
-				// print a message and end the program
+				// if file size isn't between 0 and 1000000 print a message and end the program
 				if (Integer.parseInt(s) > 1000000 || Integer.parseInt(s) < 0) {
 
 					System.out.println("File size must be between 0 and 1000000 MB");
 					System.exit(1);
-
 				}
 				line_counter++;
-
 			}
 
 			int files[] = new int[line_counter];
@@ -123,7 +141,6 @@ public class Greedy {
 			// putting all files in integer table
 			for (int i = 0; i < files.length; i++) {
 				files[i] = Integer.parseInt(input.nextLine());
-
 			}
 
 			// closing the objects used for checking the file
@@ -133,8 +150,8 @@ public class Greedy {
 			// return the table which contains all files
 			return files;
 		}
+
 		// catching any Exception and printing it
-		// and ending the program
 		catch (Exception e) {
 			System.out.println("\n\n" + e);
 			System.exit(1);

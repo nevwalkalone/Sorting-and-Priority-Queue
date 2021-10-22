@@ -1,5 +1,9 @@
 import java.io.IOException;
 
+/**
+ * Used for comparing Greedy and Greedy Decreasing Algorithms.
+ */
+
 public class AlgorithmComp {
 	public static void main(String[] args) throws IOException {
 
@@ -7,7 +11,7 @@ public class AlgorithmComp {
 		// used for all text files
 		int Total_Disks_Decreasing = 0;
 
-		// total of Disks that Greedy Decreasing
+		// total of Disks that Greedy
 		// used for all text files
 		int Total_Disks_Greedy = 0;
 
@@ -18,10 +22,9 @@ public class AlgorithmComp {
 
 		// starting from text file 1
 		int text_file_number = 1;
-
 		int comp;
 
-		// iterating through each text file(20 in total)
+		// iterating through each text file (20 in total)
 		for (int i = 1; i <= 20; i++, text_file_number++) {
 
 			// checking the text file
@@ -33,15 +36,17 @@ public class AlgorithmComp {
 			Disks_Greedy = Greedy.GreedyAlgorithm(table);
 			Total_Disks_Greedy += Disks_Greedy;
 
-			// sorting the files and running Greedy(Greedy Decreasing)
+			// sorting the files and running Greedy (Greedy Decreasing Algorithm)
 			table = Sort.MergeSort(table);
 			System.out.println("\nGreedy-Decreasing Algorithm Stats:");
 
 			Disks_Decreasing = Greedy.GreedyAlgorithm(table);
 			Total_Disks_Decreasing += Disks_Decreasing;
 
-			// comparing number of disks used in this specific text file
-			// in greedy and in greedy decreasing
+			/**
+			 * comparing number of disks used in this specific text file in greedy and in
+			 * greedy decreasing
+			 */
 			comp = compare(Disks_Greedy, Disks_Decreasing);
 
 			if (comp < 0) {
@@ -77,8 +82,8 @@ public class AlgorithmComp {
 	}
 
 	/**
-	 * @param a
-	 * @param b
+	 * @param a value to be compared
+	 * @param b value to be compared
 	 * @return a-b
 	 */
 	public static int compare(int a, int b) {
