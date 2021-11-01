@@ -1,4 +1,4 @@
-/**
+/*
  * Class representing a Node, contains data and a reference to the next node.
  * Generics were used.
  */

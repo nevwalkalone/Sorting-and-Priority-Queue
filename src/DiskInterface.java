@@ -1,4 +1,4 @@
-/**
+/*
  * Defines the methods for Disks handling.
  */
 

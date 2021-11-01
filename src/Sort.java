@@ -72,7 +72,7 @@ public class Sort {
 			// if both tables have elements we compare the current elements
 			if (right_pointer < right.length && left_pointer < left.length) {
 
-				/**
+				/*
 				 * if current value of the left table is smaller store it in the current
 				 * position of the merged array, and increment by one the left_pointer
 				 */
@@ -88,7 +88,7 @@ public class Sort {
 
 			}
 
-			/**
+			/*
 			 * else if only the right subtable has elements store its current element in
 			 * merged sort
 			 */

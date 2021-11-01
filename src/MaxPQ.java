@@ -1,4 +1,4 @@
-/**
+/*
  * Class that implements the MaxPQ Interface's methods. Comments for methods
  * that are overriden can be found in the MaxPQ Interface.
  */

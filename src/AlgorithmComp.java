@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-/**
+/*
  * Used for comparing Greedy and Greedy Decreasing Algorithms.
  */
 

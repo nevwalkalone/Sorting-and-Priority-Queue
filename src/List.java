@@ -1,4 +1,4 @@
-/**
+/*
  * Class that implements the List Interface's methods. Comments for each method
  * can be found in the List Interface. Generics were used.
  */

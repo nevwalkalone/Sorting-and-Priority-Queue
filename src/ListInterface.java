@@ -1,4 +1,4 @@
-/**
+/*
  * Defines the methods for List handling. Generics were used.
  */
 

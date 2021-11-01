@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.io.*;
 
-/**
+/*
  * Used for creating txt files, each one of them containing integer numbers in
  * the interval [0,1000000]. Number of lines for each txt file and number of txt
  * files that we want to be generated for each N value, are passed as arguments

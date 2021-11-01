@@ -1,4 +1,4 @@
-/**
+/*
  * Defines the methods for a Max Priority Queue Data Structure. Generics were
  * used.
  */
