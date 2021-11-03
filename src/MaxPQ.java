@@ -1,6 +1,6 @@
 /*
  * Class that implements the MaxPQ Interface's methods. Comments for methods
- * that are overriden can be found in the MaxPQ Interface.
+ * that are overriden can be found in the MaxPQ Interface. Generics were used.
  */
 
 public class MaxPQ<T> implements MaxPQInterface<T> {

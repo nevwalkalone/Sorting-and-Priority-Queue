@@ -43,7 +43,7 @@ public class AlgorithmComp {
 			Disks_Decreasing = Greedy.GreedyAlgorithm(table);
 			Total_Disks_Decreasing += Disks_Decreasing;
 
-			/**
+			/*
 			 * comparing number of disks used in this specific text file in greedy and in
 			 * greedy decreasing
 			 */

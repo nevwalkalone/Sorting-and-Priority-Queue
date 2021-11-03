@@ -1,6 +1,6 @@
 /*
  * Class that implements the Disk Interface's methods. Comparable is implemented
- * in order to be able to compare the capacities of 2 different disks Comments
+ * in order to be able to compare the capacities of 2 different disks. Comments
  * for methods that are overriden can be found in the Disk Interface.
  */
 
