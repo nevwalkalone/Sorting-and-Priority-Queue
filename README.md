@@ -4,5 +4,5 @@ This project was completed for the Data Structures course of the [Department of 
 
 The goal of this assignment was to get acquainted with **sorting algorithms and priority queues**. More specifically, this project addresses issues encountered in optimization problems regarding the allocation of memory resources for storing large volumes of data.
 
-Assignment in full details can be found [here](https://github.com/nevwalkalone/Sorting-and-Priority-Queues/blob/main/announcement-report/project-assignment.pdf).
+Assignment in full details can be found [here](assignment-report/project2-assignment.pdf).
 
