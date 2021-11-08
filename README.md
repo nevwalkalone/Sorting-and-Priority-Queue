@@ -99,3 +99,7 @@ A [Report](assignment-report/project2-report.pdf) was also prepared, in order to
   javac AlgorithmComp.java
   java AlgorithmComp <Number_of_Text_files>
   ```
+  
+## Contributions
+
+If you want to contribute, you can always create a pull request or open an issue.
