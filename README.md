@@ -38,13 +38,13 @@ In this part 2 Abstract Data Types were implemented.
 
 In this part the following storage algorithm, called Greedy, was implemented.
 
-Process the folders one by one in the order in which they appear. If a
+_Process the folders one by one in the order in which they appear. If a
 folder fits on one of the disks you have already used so far, save it to the disk with the most free
-space. Otherwise, if it does not fit on anyone, use a new disk and save the file there.
+space. Otherwise, if it does not fit on anyone, use a new disk and save the file there._
 
-[Greedy.java](src/Greedy.java) program will contain a main method which will first read the file sizes from a
-txt file in order to be able to execute the algorithm. Each line of the file will represent the size of
-a folder in MB, so it needs to be an integer between 0 and 1,000,000. This algorithm must make use of the Priority Queue that was created in Part A.
+[Greedy.java](src/Greedy.java) program contains a main method which initially reads the folders sizes from a
+txt file in order to be able to execute the algorithm. Each line of the txt file represents the size of
+a folder in MB, so it needs to be an integer between 0 and 1,000,000. This algorithm makes use of the Priority Queue that was created in Part A.
 
 For more, check [Useful Reads](#Useful-Reads).
 
@@ -59,13 +59,15 @@ This algorithm is implemented by arranging the folders in descending order and t
 In this part a little experimental evaluation is done to determine which
 algorithm is best in practice. [RandomInput.java](src/RandomInput.java) is used to randomly generate input data for at least 3 different values of the number of folders. [AlgorithmComp.java](src/AlgorithmComp.java) compares the two algorithms based on this input data.
 
+For more, check [Useful Reads](#Useful-Reads).
+
 ### <ins> Part E</ins>
 
 A [Report](assignment-report/project2-report.pdf) was also prepared, in order to explain how each of the Parts A-D was completed.
 
 ## Usage
 
-- Firstly, clone this repository.
+- Clone this repository.
 
   ```console
   git clone https://github.com/nevwalkalone/Sorting-and-Priority-Queues.git
@@ -77,18 +79,23 @@ A [Report](assignment-report/project2-report.pdf) was also prepared, in order to
   cd src
   ```
 
-- To run the Greedy program, compile it and execute it
+- To run the Greedy program, compile it and execute it. Note that the txt file must be specified.
 
   ```console
   javac Greedy.java
   java Greedy path_to_file\filename
   ```
 
-- To compare Greedy and Greedy Decreasing algorithms, run RandomInput.java to randomly generate input data, and then run AlgorithmComp.java.
+- To randomly generate input data compile and run RandomInput.java. Note that when running Randominput.java the number of text files as well as the number of folders (lines) that each txt file contains must be given as arguments.
 
   ```console
   javac RandomInput.java
-  java RandomInput
+  java RandomInput <Number_of_folders_in_each_txt_file> <Number_of_Text_files>
+  ```
+
+- To compare Greedy and Greedy decreasing algorithms compile and run AlgorithmComp.java. Note that the number of text files must be given as an argument.
+
+  ```console
   javac AlgorithmComp.java
-  java AlgorithmComp
+  java RAlgorithmComp <Number_of_Text_files>
   ```

@@ -7,6 +7,9 @@ import java.io.IOException;
 public class AlgorithmComp {
 	public static void main(String[] args) throws IOException {
 
+		// passing number of text files as an argument
+		int Text_Files = Integer.parseInt(args[0]);
+
 		// total of Disks that Greedy Decreasing
 		// used for all text files
 		int Total_Disks_Decreasing = 0;
@@ -25,7 +28,7 @@ public class AlgorithmComp {
 		int comp;
 
 		// iterating through each text file (20 in total)
-		for (int i = 1; i <= 20; i++, text_file_number++) {
+		for (int i = 1; i <= Text_Files; i++, text_file_number++) {
 
 			// checking the text file
 			int[] table = Greedy.TextFileCheck("TEXTFILE(" + text_file_number + ").txt");
@@ -88,7 +91,6 @@ public class AlgorithmComp {
 	 */
 	public static int compare(int a, int b) {
 		return a - b;
-
 	}
 
 }
