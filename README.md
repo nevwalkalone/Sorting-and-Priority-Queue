@@ -2,7 +2,7 @@
 
 This project was completed for the Data Structures course of the [Department of Computer Science of the Athens University of Economics and Business](https://www.dept.aueb.gr/el/cs), during the Fall semester of 2019-2020.
 
-The goal of this assignment was to get acquainted with **sorting algorithms and priority queues**. It consists of 5 Parts.
+The goal of this assignment was to get acquainted with **Sorting Algorithms and Priority Queues**. It consists of 5 Parts.
 
 More specifically, this project addresses issues encountered in optimization problems regarding the allocation of memory resources for storing large volumes of data.
 Suppose you want to place all contents of a
@@ -18,8 +18,8 @@ efficient methods of approaching the optimal solution.
 
 For a full overview it is highly suggested that you read:
 
-- [Project Assignment](assignment-report/project2-assignment.pdf), that contains all the details about the data types implementation and the application.
-- [Project Report](assignment-report/project2-report.pdf), that contains the analysis of the code.
+- [Project Assignment](assignment-report/project2-assignment.pdf), that contains all the details about the assignment's tasks.
+- [Project Report](assignment-report/project2-report.pdf), that contains the analysis and explanation of the code.
 
 ## Dependencies
 
@@ -44,7 +44,7 @@ space. Otherwise, if it does not fit on anyone, use a new disk and save the file
 
 [Greedy.java](src/Greedy.java) program contains a main method which initially reads the folders sizes from a
 txt file in order to be able to execute the algorithm. Each line of the txt file represents the size of
-a folder in MB, so it needs to be an integer between 0 and 1,000,000. This algorithm makes use of the Priority Queue that was created in Part A.
+a folder in MB, so it needs to be an integer between 0 and 1,000,000. This algorithm makes use of the Priority Queue that was created in Part A. To test this algorithm you can use [example-for-greedy.txt](example-for-greedy.txt) as an input argument.
 
 For more, check [Useful Reads](#Useful-Reads).
 
@@ -93,9 +93,9 @@ A [Report](assignment-report/project2-report.pdf) was also prepared, in order to
   java RandomInput <Number_of_folders_in_each_txt_file> <Number_of_Text_files>
   ```
 
-- To compare Greedy and Greedy decreasing algorithms compile and run AlgorithmComp.java. Note that the number of text files must be given as an argument.
+- To compare Greedy and Greedy decreasing algorithms compile and run AlgorithmComp.java. Note that the number of text files must be given as an argument. A detailed message, which contains statistics for each algorithm, is printed when running this program.
 
   ```console
   javac AlgorithmComp.java
-  java RAlgorithmComp <Number_of_Text_files>
+  java AlgorithmComp <Number_of_Text_files>
   ```
