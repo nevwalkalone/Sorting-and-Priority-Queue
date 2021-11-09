@@ -103,3 +103,7 @@ A [Report](assignment-report/project2-report.pdf) was also prepared, in order to
 ## Contributions
 
 If you want to contribute, you can always create a pull request or open an issue.
+
+## License
+
+[MIT](LICENSE)
