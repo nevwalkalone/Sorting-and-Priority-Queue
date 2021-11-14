@@ -76,7 +76,7 @@ A [Report](assignment-report/project2-report.pdf) was also prepared, in order to
 - Change Directory to src
 
   ```console
-  cd src
+  cd Sorting-and-Priority-Queues\src
   ```
 
 - To run the Greedy program, compile it and execute it. Note that the txt file must be specified.
