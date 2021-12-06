@@ -42,9 +42,9 @@ _Process the folders one by one in the order in which they appear. If a
 folder fits on one of the disks you have already used so far, save it to the disk with the most free
 space. Otherwise, if it does not fit on anyone, use a new disk and save the file there._
 
-[Greedy.java](src/Greedy.java) program contains a main method which initially reads the folders sizes from a
+`Greedy.java` program contains a main method which initially reads the folders sizes from a
 txt file in order to be able to execute the algorithm. Each line of the txt file represents the size of
-a folder in MB, so it needs to be an integer between 0 and 1,000,000. This algorithm makes use of the Priority Queue that was created in Part A. To test this algorithm you can use [example-for-greedy.txt](example-for-greedy.txt) as an input argument.
+a folder in MB, so it needs to be an integer between 0 and 1,000,000. This algorithm makes use of the Priority Queue that was created in Part A. To test this algorithm you can use `example-for-greedy.txt` as an input argument.
 
 For more, check [Useful Reads](#Useful-Reads).
 
@@ -52,18 +52,18 @@ For more, check [Useful Reads](#Useful-Reads).
 
 It is important to note that the solution of the Greedy algorithm is not always optimal. In this part a 2nd algorithm, called **Greedy-Decreasing**, is implemented.
 
-This algorithm is implemented by arranging the folders in descending order and then applying the Greedy algorithm. Mergesort was used as as sorting method, found in [Sort.java](src/Sort.java).
+This algorithm is implemented by arranging the folders in descending order and then applying the Greedy algorithm. Mergesort was used as as sorting method, found in `Sort.java`.
 
 ### <ins> Part D</ins>
 
 In this part a little experimental evaluation is done to determine which
-algorithm is best in practice. [RandomInput.java](src/RandomInput.java) is used to randomly generate input data for at least 3 different values of the number of folders. [AlgorithmComp.java](src/AlgorithmComp.java) compares the two algorithms based on this input data.
+algorithm is best in practice. `RandomInput.java` is used to randomly generate input data for at least 3 different values of the number of folders. `AlgorithmComp.java` compares the two algorithms based on this input data.
 
 For more, check [Useful Reads](#Useful-Reads).
 
 ### <ins> Part E</ins>
 
-A [Report](assignment-report/project2-report.pdf) was also prepared, in order to explain how each of the Parts A-D was completed.
+A **Project Report** was also prepared, in order to explain how each of the Parts A-D was completed.
 
 ## Usage
 
@@ -99,7 +99,7 @@ A [Report](assignment-report/project2-report.pdf) was also prepared, in order to
   javac AlgorithmComp.java
   java AlgorithmComp <Number_of_Text_files>
   ```
-  
+
 ## Contributions
 
 If you want to contribute, you can always create a pull request or open an issue.
