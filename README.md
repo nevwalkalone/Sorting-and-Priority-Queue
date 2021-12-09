@@ -86,14 +86,14 @@ A **Project Report** was also prepared, in order to explain how each of the Part
   java Greedy path_to_file\filename
   ```
 
-- To randomly generate input data compile and run RandomInput.java. Note that when running Randominput.java the number of text files as well as the number of folders (lines) that each txt file contains must be given as arguments.
+- To randomly generate input data compile and run `RandomInput.java`. Note that when running RandomInput.java the number of text files as well as the number of folders (lines) that each txt file will contain must be given as arguments. All txt files will be generated inside the **src directory**.
 
   ```console
   javac RandomInput.java
   java RandomInput <Number_of_folders_in_each_txt_file> <Number_of_Text_files>
   ```
 
-- To compare Greedy and Greedy decreasing algorithms compile and run AlgorithmComp.java. Note that the number of text files must be given as an argument. A detailed message, which contains statistics for each algorithm, is printed when running this program.
+- To compare Greedy and Greedy decreasing algorithms using the txt files that were randomly generated, compile and run `AlgorithmComp.java`. Note that the number of text files must be given as an argument. A detailed message, which contains statistics for each algorithm, will be printed when running this program.
 
   ```console
   javac AlgorithmComp.java
